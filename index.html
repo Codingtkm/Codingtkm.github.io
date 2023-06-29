@@ -8,15 +8,17 @@
   <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
   <title>Coding TKM</title>
   <!-- CSS -->
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/splide.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-icons.css">
   <!-- Java script -->
+  <script src="js/aos.js"></script>
   <script src="js/mode.js"></script>
   <script src="js/splide.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/splide-extension-auto-scroll.js.map"></script>
+  <script src="js/splide-extension-auto-scroll.min.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap');
   </style>
@@ -26,389 +28,488 @@
   <div id="preloader"></div>
 
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-black rounded" aria-label="Thirteenth navbar example">
+  <nav class="navbar navbar-expand-lg bg-body-black" aria-label="Thirteenth navbar example">
     <div class="container-lg">
-      <a class="navbar-brand col-md-3 me-0 fw-bold fs-4 me-5" href="#">Coding <span class="green">TKM</span></a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="navbar-brand col-md-3 me-0 fw-bold fs-4 me-5">Coding <span class="green">TKM</span></div>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
+        aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon border-0"></span>
       </button>
 
-      <div class="collapse navbar-collapse d-lg-flex mx-auto" id="navbarsExample11">
-        
-        <ul class="navbar-nav col-md-6 justify-content-lg-center">
-          <li class="nav-item">
-            <a class="nav-link text-white" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#skills">Our skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#contact">Contact</a>
-          </li>
-        </ul>
-        <div class="d-lg-flex col-md-3 justify-content-lg-end ms-auto">
-          <button class="cssbuttons-io-button"> Join our team
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
-            </div>
-          </button>
+      <div class="collapse navbar-collapse d-lg-flex mx-auto">
+
+
+        <div class="collapse navbar-collapse d-lg-flex col-md-3 justify-content-lg-end ms-auto" id="navbarsExample11">
+          <ul class="navbar-nav col-md-6 justify-content-lg-center">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#about">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#skills">Our skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </nav>
 
   <!-- scroll to top -->
-  <button class="btn btn-sm bg-danger bg-opacity-75 rounded-pill position-fixed bottom-0 end-0 my-3 mx-3 mx-lg-5 mx-xl-5" style="display: block; z-index: 99;" onclick="topFunction()" id="myBtn"><i class="bi bi-caret-up-fill fs-6 text-white"></i></button>
+  <button
+    class="btn btn-sm bg-danger bg-opacity-75 rounded-pill position-fixed bottom-0 end-0 my-3 mx-3 mx-lg-5 mx-xl-5"
+    style="display: block; z-index: 99;" onclick="topFunction()" id="myBtn"><i
+      class="bi bi-caret-up-fill fs-6 text-white"></i></button>
 
   <div class="container-lg px-4">
     <!-- header -->
     <div class="row g-0" id="home">
-        <div class="col-md">
-          <img src="img/header.png" alt="" class="mt-4 w-75 d-none d-md-block text-center">
+      <div class="col-md">
+        <img data-aos="zoom-in" src="img/header.png" alt="" class="mt-4 w-75 d-none d-md-block text-center">
+      </div>
+      <div data-aos="zoom-in" class="col-md">
+        <div class="mt-lg-5 mt-sm-0 pt-5">
+          <div class="fs-1 text-white"><span class="green">"</span> We are <mark
+              class="bg-green text-white rounded-3">Coding
+              TKM</mark><span class="green"> "</span></div>
+          <div class="mt-4 text-white" style="line-height: 2rem;">We are Turkmenistan based web designer & full-stack
+            developers focused on clean & user-friendly experiences, We are passionate about building excellent software
+            that improves the lives of those around us.</div>
         </div>
-        <div class="col-md">
-            <div class="mt-lg-5 mt-sm-0 pt-5">
-              <div class="fs-1 text-white"><span class="green">"</span> We are <mark class="bg-green text-white">Coding TKM</mark><span class="green"> "</span></div>
-              <div class="mt-4 text-white" style="line-height: 2rem;">We are Turkmenistan based web designer & full-stack developers focused on clean & user-friendly experiences, We are passionate about building excellent software that improves the lives of those around us.</div>
+        <a class="text-decoration-none" href="https://github.com/Codingtkm">
+          <button class="cssbuttons-io-button mt-3">Join our team
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path fill="currentColor"
+                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+              </svg>
             </div>
-            <button class="cssbuttons-io-button mt-3"> Join our team
-              <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
-              </div>
-            </button>
-        </div>
+          </button>
+        </a>
+      </div>
     </div>
 
     <!-- about us -->
-    <div class="text-center text-white fs-3 mt-5 fw-semibold" style="letter-spacing: 0.2rem;">
-        ABOUT <span class="green">US</span>
+    <div id="about" class="text-center text-white fs-3 mt-5 fw-semibold d-flex align-items-center justify-content-center"
+      style="letter-spacing: 0.2rem;">
+      ABOUT <img src="img/Atamyrat.jpg" class="img-fluid rounded-circle" width="40" alt="">
     </div>
     <div class="row mt-4">
-        <div class="col-md">
-            <div class="text-white fs-5 text-start mb-3">
-              <span class="green">-</span> OUR INFOS 
-            </div>
-            <ul class="text-start p-0 m-0" style="list-style: none;">
-              <li class="text-start mb-3">
-                Freelance :  <span class="text-white"> Available</span>
-              </li>
-              <li class="text-start mb-3">
-                Nationality :  <span class="text-white"> Turkmen</span>
-              </li>
-              <li class="text-start mb-3">
-                Ages :  <span class="text-white"> 18</span>
-              </li>
-              <li class="text-start mb-3">
-                Languages :  <span class="text-white"> English, Turkmen, Russian, Turkish</span>
-              </li>
-              <li class="text-start mb-3">
-                Education :  <span class="text-white"> Secondary</span>
-              </li>
-              <li class="text-start mb-5">
-                What we do :  <span class="text-white"> Front-end & Back-end development</span>
-              </li>
-            </ul>
-
+      <div class="col-md">
+        <div class="text-white fs-5 text-start mb-3">
+          <span class="green">-</span> INFOS
         </div>
+        <ul class="text-start p-0 m-0" style="list-style: none;">
+          <li class="text-start mb-3">
+            Github : <a href="https://github.com/Atamyrat2005" class="text-decoration-none text-white">
+              @atamyrat2005</a>
+          </li>
+          <li class="text-start mb-3">
+            Freelance : <span class="text-white"> Available</span>
+          </li>
+          <li class="text-start mb-3">
+            Nationality : <span class="text-white"> Turkmen</span>
+          </li>
+          <li class="text-start mb-3">
+            Education : <span class="text-white"> Secondary</span>
+          </li>
+          <li class="text-start mb-3">
+            Languages : <span class="text-white"> English, Turkmen, Russian, Turkish</span>
+          </li>
+          <li class="text-start mb-5">
+            Work as : <span class="text-white"> Full stack web developer & System Programmer</span>
+          </li>
+        </ul>
 
-        <div class="col-md">
-            <div class="row g-4">
-                <div class="col-6">
-                    <div class="border border-secondary p-4">
-                        <div class="fs-1 pt-2 text-white">
-                            3 <sup class="">+</sup>
-                        </div>
-                        <div class="green small text-center">- YEARS OF EXPERIENCE</div>
-                    </div>
-                </div>
-                <div class="col-6">
-                  <div class="border border-secondary p-4">
-                    <div class="fs-1 pt-2 text-white">
-                        5 <sup class="">+</sup>
-                    </div>
-                    <div class="green small text-center">- FULL-STACK SITES</div>
-                  </div>
-                </div>
+      </div>
+
+      <div class="col-md">
+        <div class="row g-4">
+          <div class="col-6">
+            <div class="border border-secondary p-4">
+              <div class="green small text-center"><span class="text-white">-</span> YEARS OF EXPERIENCE</div>
+              <div class="fs-1 pt-2 text-white">
+                3 <sup class="">+</sup>
+              </div>
             </div>
-
-            <div class="row g-4 pt-4">
-              <div class="col-6">
-                  <div class="border border-secondary p-4">
-                      <div class="fs-1 pt-2 text-white">
-                          15 <sup class="">+</sup>
-                      </div>
-                      <div class="green small text-center">- FRONT-END SITES</div>
-                  </div>
+          </div>
+          <div class="col-6">
+            <div class="border border-secondary p-4">
+              <div class="green small text-center"><span class="text-white">-</span> BACK END PROJECTS</div>
+              <div id="number" class="fs-1 pt-2 text-white">
+                5 <sup class="">+</sup>
               </div>
-              <div class="col-6">
-                <div class="border border-secondary p-4">
-                  <div class="fs-1 pt-2 text-white">
-                      20 <sup class="">+</sup>
-                  </div>
-                  <div class="green small text-center">- COMPLETED PROJECTS</div>
-                </div>
-              </div>
+            </div>
           </div>
         </div>
+
+        <div class="row g-4 pt-4">
+          <div class="col-6">
+            <div class="border border-secondary p-4">
+              <div class="green small text-center"><span class="text-white">-</span> FRONT END PROJECTS</div>
+              <div id="number" class="fs-1 pt-2 text-white">
+                10 <sup class="">+</sup>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="border border-secondary p-4">
+              <div class="green small text-center"><span class="text-white">-</span> IT AWARDS</div>
+              <div class="fs-1 pt-2 text-white">
+                6 <sup class="">+</sup>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
+
+
+
+    <!-- about us -->
+    <div class="text-center text-white fs-3 mt-5 fw-semibold d-flex align-items-center justify-content-center"
+      style="letter-spacing: 0.2rem;">
+      <img src="img/Gozel.jpg" class="img-fluid rounded-circle" width="40" alt=""> ABOUT
+    </div>
+    <div class="row mt-4">
+
+      <div class="col-md">
+        <div class="row g-4">
+          <div class="col-6">
+            <div class="border border-secondary p-4">
+              <div class="fs-1 pt-2 text-white">
+                3 <sup class="">+</sup>
+              </div>
+              <div class="green small text-center"><span class="text-white">-</span> YEARS OF EXPERIENCE</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="border border-secondary p-4">
+              <div id="number" class="fs-1 pt-2 text-white">
+                5 <sup class="">+</sup>
+              </div>
+              <div class="green small text-center"><span class="text-white">-</span> BACK END PROJECTS</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 pt-4">
+          <div class="col-6">
+            <div class="border border-secondary p-4">
+              <div id="number" class="fs-1 pt-2 text-white">
+                10 <sup class="">+</sup>
+              </div>
+              <div class="green small text-center"><span class="text-white">-</span> FRONT END PROJECTS</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="border border-secondary p-4">
+              <div class="fs-1 pt-2 text-white">
+                6 <sup class="">+</sup>
+              </div>
+              <div class="green small text-center"><span class="text-white">-</span> IT AWARDS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="text-white fs-5 text-end mb-3">
+          <span class="green">-</span> INFOS
+        </div>
+        <ul class="text-end p-0 m-0" style="list-style: none;">
+          <li class="text-end mb-3">
+            Github : <a href="https://github.com/arsgozel" class="text-decoration-none text-white"> @arsgozel</a>
+          </li>
+          <li class="text-end mb-3">
+            Freelance : <span class="text-white"> Available</span>
+          </li>
+          <li class="text-end mb-3">
+            Nationality : <span class="text-white"> Turkmen</span>
+          </li>
+          <li class="text-end mb-3">
+            Education : <span class="text-white"> Secondary</span>
+          </li>
+          <li class="text-end mb-3">
+            Languages : <span class="text-white"> English, Turkmen, Russian, Turkish</span>
+          </li>
+          <li class="text-end mb-5">
+            Work as : <span class="text-white"> Front-end web developer & UI/UX designer</span>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+
 
     <!-- skills -->
     <div class="mt-4 pt-5" id="skills">
-      <div class="text-center text-white fs-3 mt-5 fw-semibold text-uppercase" style="letter-spacing: 0.2rem;">Languages and tools we<span class="green"> USE</span></div>
-      <div class="row justify-content-center align-items-center my-4">
-        <div class="splide py-5" role="group" id="splide-gallery">
+      <div class="text-center text-white fs-3 mt-5 fw-semibold text-uppercase" style="letter-spacing: 0.2rem;">Languages
+        and tools we<span class="green"> USE</span></div>
+
+
+
+      <div class="row justify-content-center align-items-center my-5">
+        <div id="splide" class="splide">
           <div class="splide__track">
-              <ul class="splide__list">
-                  <li class="splide__slide">
-                        <img src="img/HTML5.png" alt="" class="img-fluid w-50">
-                  </li>
-
-                  <li class="splide__slide">
-                        <img src="img/Css.png" alt="" class="img-fluid w-50">
-                  </li>
-
-                  <li class="splide__slide">
-                    <img src="img/JavaScript.png" alt="" class="img-fluid w-50">
-                  </li>
-
-                  <li class="splide__slide">
-                    <img src="img/JQuery.png" alt="" class="img-fluid w-50">
-                  </li>
-                  
-                  <li class="splide__slide">
-                    <img src="img/Laravel.png" alt="" class="img-fluid w-50">
-                  </li>
-
-                  <li class="splide__slide">
-                    <img src="img/PHP.png" alt="" class="img-fluid w-50">
-                  </li>
-                  
-                  <li class="splide__slide">
-                    <img src="img/Bootstrap.png" alt="" class="img-fluid w-50">
-                  </li>
-
-                  <li class="splide__slide">
-                    <img src="img/Flutter.png" alt="" class="img-fluid w-50">
-                  </li>
-
-                  <li class="splide__slide">
-                    <img src="img/Git.png" alt="" class="img-fluid w-50">
-                  </li>
-
-                  <li class="splide__slide">
-                    <img src="img/Github.png" alt="" class="img-fluid w-50">
-                  </li>
-
-                  <li class="splide__slide">
-                    <img src="img/Illustrator.png" alt="" class="img-fluid w-50">
-                  </li>
-
-                  <li class="splide__slide">
-                    <img src="img/Photoshop.png" alt="" class="img-fluid w-50">
-                  </li>
-                  
-                  <li class="splide__slide">
-                    <img src="img/MySQL.png" alt="" class="img-fluid w-50">
-                  </li>
-
-                  <li class="splide__slide">
-                    <img src="img/Python.png" alt="" class="img-fluid w-50">
-                  </li>
-
-                  <li class="splide__slide">
-                    <img src="img/React.png" alt="" class="img-fluid w-50">
-                  </li>
+            <ul class="splide__list text-center align-items-center">
+              <li class="splide__slide">
+                <img src="img/tools/1.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/2.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/3.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/4.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/5.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/6.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/7.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/8.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/9.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/10.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/11.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/12.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/13.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/14.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/15.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/16.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/17.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/18.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/19.png" alt="" class="img-fluid w-50">
+              </li>
+              <li class="splide__slide">
+                <img src="img/tools/20.png" alt="" class="img-fluid w-50">
+              </li>
+            </ul>
+          </div>
         </div>
 
-          <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var splide = new Splide('#splide-gallery', {
-                    type: 'loop',
-                    autoplay: true,
-                    padding: '1rem',
-                    gap: '1rem',
-                    interval: 3000,
-                    perPage: 6,
-                    perMove: 1,
-                    breakpoints: {
-                        1199: {
-                            perPage: 6,
-                            perMove: 2,
-                        },
-                        991: {
-                            perPage: 5,
-                            perMove: 2,
-                        },
-                        767: {
-                            perPage: 4,
-                            perMove: 1,
-                        },
-                        575: {
-                            perPage: 3,
-                            perMove: 1,
-                        },
-                    }
-                });
-                splide.mount();
-            });
-        </script>
       </div>
-    </div>
+      <!-- projects -->
+      <div class="mt-4 pt-4 p-4" id="projects">
+        <div class="text-center text-white fs-3 mt-5 fw-semibold text-uppercase mb-4" style="letter-spacing: 0.2rem;">
+          Our <span class="green"> Projects</span></div>
 
-    <!-- projects -->
-    <div class="mt-4 pt-4 p-4" id="projects">
-      <div class="text-center text-white fs-3 mt-5 fw-semibold text-uppercase mb-4" style="letter-spacing: 0.2rem;">Our <span class="green"> Projects</span></div>
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-4 g-4 text-center pt-3">
+          <div class="d-block" data-aos="fade-up" data-aos-duration="750">
+            <div><img class="img-fluid rounded-top-3" src="img/p/p1.png" alt=""></div>
+            <div class="p-3 rounded-bottom-4 border border-secondary border-opacity-50">
+              <a href="https://atamyrat2005.github.io/Estate/" class="fs-4 text-decoration-none text-white"><span
+                  class="green">-</span> Estate Agency</a>
+              <p class="small mt-2 text-white">Fully dynamic web site with back-end and admin panel.</p>
+              <ul class="text-start small text-white" style="list-style: square">
+                <li class="mb-2">Html / Css</li>
+                <li class="mb-2">Js / Splide / JQuery</li>
+                <li class="mb-2">Bootstrap / Laravel / PWA</li>
+              </ul>
+              <br>
+              <a href="https://github.com/Atamyrat2005"
+                class="d-flex justify-content-end text-decoration-none green">@Atamyrat2005</a>
+            </div>
+          </div>
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-4 g-4 text-center pt-3">
-        <div class="d-block">
-          <div><img class="img-fluid rounded-top-3" src="img/p/p1.png" alt=""></div>
-          <div class="p-3 rounded-bottom-4 border border-secondary border-opacity-50">
-            <a href="https://atamyrat2005.github.io/Estate/" class="fs-4 text-decoration-none text-white"><span class="green">-</span> Estate Agency</a>
-            <p class="small mt-2 text-white">Fully dynamic web site with back-end and admin panel.</p>
-            <ul class="text-start small text-white" style="list-style: square">
-              <li class="mb-2">Laravel</li>
-              <li class="mb-2">CSS / Bootstrap</li>
-              <li class="mb-2">Js / JQuery</li>
-            </ul>
-            <br>
-            <a href="https://github.com/Atamyrat2005"
-              class="d-flex justify-content-end text-decoration-none green">@Atamyrat2005</a>
-          </div>
-        </div>
-  
-        <div class="d-block">
-          <div><img class="img-fluid rounded-top-3" src="img/p/p2.png" alt=""></div>
-          <div class="p-3 rounded-bottom-4 border border-secondary border-opacity-50">
-            <a href="https://arsgozel.github.io/Tiffany/" class="fs-4 text-decoration-none text-white"><span class="green">-</span> Tiffany & Co</a>
-            <p class="small mt-2 text-white">Modern front-end web site created with UI/UX design.</p>
-            <ul class="text-start small text-white" style="list-style: square">
-              <li class="mb-2">Html</li>
-              <li class="mb-2">CSS / Bootstrap</li>
-              <li class="mb-2">Js / Splide Js</li>
-            </ul>
-            <br>
-            <a href="https://github.com/arsgozel"
-              class="d-flex justify-content-end text-decoration-none green">@arsgozel</a>
-          </div>
-        </div>
-  
-        <div class="d-block">
-          <div><img class="img-fluid rounded-top-3" src="img/p/p3.png" alt=""></div>
-          <div class="p-3 rounded-bottom-4 border border-secondary border-opacity-50">
-            <a href="https://atamyrat2005.github.io/Cyber-security/" class="fs-4 text-decoration-none text-white"><span class="green">-</span> Cyber
-              security</a>
+          <div class="d-block" data-aos="fade-up" data-aos-duration="1500">
+            <div><img class="img-fluid rounded-top-3" src="img/p/p2.png" alt=""></div>
+            <div class="p-3 rounded-bottom-4 border border-secondary border-opacity-50">
+              <a href="https://arsgozel.github.io/Tiffany/" class="fs-4 text-decoration-none text-white"><span
+                  class="green">-</span> Tiffany & Co</a>
               <p class="small mt-2 text-white">Modern front-end web site created with UI/UX design.</p>
-            <ul class="text-start small text-white" style="list-style: square">
-              <li class="mb-2">Html</li>
-              <li class="mb-2">CSS / Bootstrap</li>
-              <li class="mb-2">Js / Splide Js</li>
-            </ul>
-            <br>
-            <a href="https://github.com/Atamyrat2005"
-              class="d-flex justify-content-end text-decoration-none green">@Atamyrat2005</a>
+              <ul class="text-start small text-white" style="list-style: square">
+                <li class="mb-2">Html</li>
+                <li class="mb-2">CSS / Bootstrap</li>
+                <li class="mb-2">Js / Splide Js</li>
+              </ul>
+              <br>
+              <a href="https://github.com/arsgozel"
+                class="d-flex justify-content-end text-decoration-none green">@arsgozel</a>
+            </div>
           </div>
-        </div>
-  
-        <div class="d-block">
-          <div><img class="img-fluid bg-white rounded-top-3" src="img/p/p4.png" alt=""></div>
 
-          <div class="p-3 rounded-bottom-4 border border-secondary border-opacity-50">
-            <a href="https://arsgozel.github.io/logistics_web_site/" class="fs-4 text-decoration-none text-white"><span class="green">-</span> Logistics</a>
-            <p class="small mt-2 text-white">Modern front-end web site created with UI/UX design.</p>
-            <ul class="text-start small text-white" style="list-style: square">
-              <li class="mb-2">Html</li>
-              <li class="mb-2">CSS / Bootstrap</li>
-              <li class="mb-2">Js / Splide Js</li>
-            </ul>
-            <br>
-            <a href="https://github.com/arsgozel"
-              class="d-flex justify-content-end text-decoration-none green">@arsgozel</a>
+          <div class="d-block" data-aos="fade-up" data-aos-duration="2250">
+            <div><img class="img-fluid rounded-top-3" src="img/p/p3.png" alt=""></div>
+            <div class="p-3 rounded-bottom-4 border border-secondary border-opacity-50">
+              <a href="https://atamyrat2005.github.io/Cyber-security/"
+                class="fs-4 text-decoration-none text-white"><span class="green">-</span> Cyber
+                security</a>
+              <p class="small mt-2 text-white">Responsive front-end web site created with UI/UX design.</p>
+              <ul class="text-start small text-white" style="list-style: square">
+                <li class="mb-2">Html / Css</li>
+                <li class="mb-2">Aos / Bootstrap</li>
+                <li class="mb-2">Js / JQuery</li>
+              </ul>
+              <br>
+              <a href="https://github.com/Atamyrat2005"
+                class="d-flex justify-content-end text-decoration-none green">@Atamyrat2005</a>
+            </div>
+          </div>
+
+          <div class="d-block" data-aos="fade-up" data-aos-duration="3000">
+            <div><img class="img-fluid bg-white rounded-top-3" src="img/p/p4.png" alt=""></div>
+
+            <div class="p-3 rounded-bottom-4 border border-secondary border-opacity-50">
+              <a href="https://arsgozel.github.io/logistics_web_site/"
+                class="fs-4 text-decoration-none text-white"><span class="green">-</span> Logistics</a>
+              <p class="small mt-2 text-white">Modern front-end web site created with UI/UX design.</p>
+              <ul class="text-start small text-white" style="list-style: square">
+                <li class="mb-2">Html</li>
+                <li class="mb-2">CSS / Bootstrap</li>
+                <li class="mb-2">Js / Splide Js</li>
+              </ul>
+              <br>
+              <a href="https://github.com/arsgozel"
+                class="d-flex justify-content-end text-decoration-none green">@arsgozel</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
 
-    <!-- contact -->
-    <div class="mt-4 pt-4" id="contact">
-      <div class="text-center text-white fs-3 mt-5 fw-semibold text-uppercase mb-4" style="letter-spacing: 0.2rem;">GET IN <span class="green">TOUCH</span></div>
-      
-      <div class="row g-5">
-          <div class="col-md">
-            <div class="text-white fs-5 text-start mb-3">
-              <span class="green">-</span> CONTACT US
-            </div>
-            <div class="small mb-3" style="line-height: 1.6rem;">
-              Feel free to get in touch with us. We are always open to discussing new projects, creative ideas or opportunities to be part of your visions.
-            </div>
-            <ul class="text-start p-0 m-0" style="list-style: none;">
-              <li class="text-start mb-3">
-                Github :  <a href="https://github.com/Codingtkm" class="text-white">Coding <span class="green">TKM</span></a>
-              </li>
+      <!-- footer -->
+      <div class="container-xl px-0 pt-5">
+        <footer>
+          <!-- contact -->
+          <div class="mt-4 pt-4" id="contact">
+            <div class="text-center text-white fs-3 mt-5 fw-semibold text-uppercase mb-4"
+              style="letter-spacing: 0.2rem;">
+              GET IN <span class="green">TOUCH</span></div>
 
-              <li class="text-start mb-3">
-                Developers :  <a href="https://github.com/arsgozel" class="text-white">arsgozel  &  <a href="https://github.com/Atamyrat2005" class="text-white">Atamyrat2005</a></a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-md">
-            <div class="text-white fs-4 text-start mb-4 ps-md-3 ps-sm-0">
-              <span class="green">-</span> SOCIAL MEDIA
-            </div>
-              <div class="d-flex align-items-center justify content-center ps-3">
-                    <button class="btn btn-lg rounded-pill btn-outline-secondary mx-2">
-                        <i class="bi bi-github fs-4"></i>
-                    </button>
-
-                    <button class="btn btn-lg rounded-pill btn-outline-secondary mx-2">
-                      <i class="bi bi-instagram fs-4"></i>
-                    </button>
-
-                    <button class="btn btn-lg rounded-pill btn-outline-secondary mx-2">
-                      <i class="bi bi-linkedin fs-4"></i>
-                    </button>
-
-                    <button class="btn btn-lg rounded-pill btn-outline-secondary mx-2">
-                      <i class="bi bi-tiktok fs-4"></i>
-                    </button>
+            <div class="row g-5 justify-content-center align-items-start">
+              <div class="col-md">
+                <div class="text-white fs-5 text-start mb-3">
+                  <span class="green">-</span> CONTACT US
+                </div>
+                <div class="small mb-3" style="line-height: 1.6rem;">
+                  Feel free to get in touch with us. We are always open to discussing <br> new projects, creative ideas
+                  or
+                  opportunities to be part of your visions.
+                </div>
+                <ul class="text-start p-0 m-0" style="list-style: none;">
+                  <li class="text-start mb-3">
+                    Github: <a href="https://github.com/Codingtkm"
+                      class="text-decoration-none text-white green2">Coding <span class="green">TKM</span></a>
+                  </li>
+                </ul>
               </div>
+
+              <div class="col-md">
+                <div class="text-white fs-4 text-end mb-4 ps-md-3 ps-sm-0">
+                  <span class="green">-</span> SOCIAL MEDIA
+                </div>
+                <div class="d-flex align-items-center justify-content-end ps-3">
+                  <a href="https://github.com/Codingtkm" class="btn btn-outline-primary rounded-pill mx-2">
+                    <i class="bi bi-github fs-4"></i>
+                  </a>
+
+                  <a class="btn btn-outline-primary rounded-pill green2 mx-2">
+                    <i class="bi bi-instagram fs-4"></i>
+                  </a>
+
+                  <a class="btn btn-outline-primary rounded-pill green2 mx-2">
+                    <i class="bi bi-linkedin fs-4"></i>
+                  </a>
+
+                  <a class="btn btn-outline-primary rounded-pill green2 mx-2">
+                    <i class="bi bi-tiktok fs-4"></i>
+                  </a>
+                </div>
+                <div class="text-end mt-3">
+                  Developers: <a href="https://github.com/arsgozel" class="green text-decoration-none"
+                    target="_blank">Gözel</a><span class="text-white"> & </span><a href="https://atamyrat2005.github.io/"
+                    class="green text-decoration-none" target="_blank">Atamyrat</a>
+                  </div>
+              </div>
+            </div>
           </div>
       </div>
-    </div>
-  </div>
 
-  <!-- footer -->
-  <div class="container-xxl px-0 pt-5">
-    <footer>
       <hr>
-      <div class="text-center">All rights reserved | Design by: <a href="https://github.com/arsgozel" class="green" target="_blank">Gözel</a></div>
-      
-    </footer>
-  </div>
+      <div class="text-center pb-3">© 2023 All rights reserved | Design by: <a href="https://github.com/arsgozel"
+          class="green text-decoration-none" target="_blank">Gözel</a><span class="text-white"> & </span><a href="https://atamyrat2005.github.io/"
+          class="green text-decoration-none" target="_blank">Atamyrat</a></div>
 
-  <!-- scroll to top -->
-  <script>
-    let mybutton = document.getElementById("myBtn");
-  
-    window.onscroll = function () { scrollFunction() };
-  
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
+      </footer>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Splide('.splide', {
+          type: 'loop',
+          drag: 'free',
+          focus: 'center',
+          snap: true,
+          perPage: 5,
+          pagination: false,
+          arrows: false,
+          autoScroll: {
+            speed: 1,
+          },
+        }).mount(window.splide.Extensions);
+      });
+    </script>
+    <!-- scroll to top -->
+    <script>
+      let mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
       }
-    }
-  
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script>
+      AOS.init();
+    </script>
 </body>
+
 </html>
