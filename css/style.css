@@ -60,6 +60,10 @@
   background-color: #ff1154;
 }
 
+.green2 {
+  color: #fff;
+}
+
 .green2:hover {
   color: #ff1154;
   transition: 0.6s;
@@ -206,4 +210,147 @@ a {
 
 a:hover {
   border-bottom: 2px solid #ff1154;
+}
+
+
+
+
+div .six::after {
+  content: counter(count1);
+  animation: counter1 3s forwards;
+}
+
+@keyframes counter1 {
+  0% {
+    counter-increment: count1 0;
+  }
+
+  10% {
+    counter-increment: count1 1;
+  }
+
+  20% {
+    counter-increment: count1 2;
+  }
+
+  40% {
+    counter-increment: count1 3;
+  }
+
+  60% {
+    counter-increment: count1 4;
+  }
+
+  80% {
+    counter-increment: count1 5;
+  }
+
+  100% {
+    counter-increment: count1 6;
+  }
+}
+
+div .ten::after {
+  content: counter(count2);
+  animation: counter2 3s forwards;
+}
+
+@keyframes counter2 {
+  0% {
+    counter-increment: count2 0;
+  }
+
+  10% {
+    counter-increment: count2 1;
+  }
+
+  20% {
+    counter-increment: count2 2;
+  }
+
+  30% {
+    counter-increment: count2 3;
+  }
+
+  40% {
+    counter-increment: count2 4;
+  }
+
+  50% {
+    counter-increment: count2 5;
+  }
+
+  60% {
+    counter-increment: count2 6;
+  }
+
+  70% {
+    counter-increment: count2 7;
+  }
+
+  80% {
+    counter-increment: count2 8;
+  }
+
+  90% {
+    counter-increment: count2 9;
+  }
+
+  100% {
+    counter-increment: count2 10;
+  }
+}
+
+div .five::after {
+  content: counter(count3);
+  animation: counter3 3s forwards;
+}
+
+@keyframes counter3 {
+  0% {
+    counter-increment: count3 0;
+  }
+
+  20% {
+    counter-increment: count3 1;
+  }
+
+  40% {
+    counter-increment: count3 2;
+  }
+
+  60% {
+    counter-increment: count3 3;
+  }
+
+  80% {
+    counter-increment: count3 4;
+  }
+
+  100% {
+    counter-increment: count3 5;
+  }
+}
+
+div .three::after {
+  content: counter(count4);
+  animation: counter4 3s forwards;
+}
+
+@keyframes counter4 {
+  0% {
+    counter-increment: count4 0;
+  }
+
+  40% {
+    counter-increment: count4 1;
+  }
+
+  70% {
+    counter-increment: count4 2;
+  }
+
+  100% {
+    counter-increment: count4 3;
+  }
 }

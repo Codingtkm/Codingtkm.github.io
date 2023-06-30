@@ -19,6 +19,7 @@
   <script src="js/splide.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/splide-extension-auto-scroll.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap');
   </style>
@@ -35,25 +36,25 @@
         aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon border-0"></span>
       </button>
-        <div class="collapse navbar-collapse d-lg-flex col-md-3 justify-content-lg-end ms-auto" id="navbarsExample11">
-          <ul class="navbar-nav col-md-6 justify-content-lg-center">
-            <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="#about">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#skills">Our skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse d-lg-flex col-md-3 justify-content-lg-end ms-auto" id="navbarsExample11">
+        <ul class="navbar-nav col-md-6 justify-content-lg-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#about">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#skills">Our skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -73,8 +74,8 @@
       <div data-aos="zoom-in" class="col-md">
         <div class="mt-lg-5 mt-sm-0 pt-5">
           <div class="fs-1 text-white"><span class="green">"</span> We are <mark
-              class="bg-green text-white rounded-3">Coding
-              TKM</mark><span class="green"> "</span></div>
+              class="bg-black text-white rounded-3"><span class="green" id="element"></span> <span
+                class="green">"</span></div>
           <div class="mt-4 text-white" style="line-height: 2rem;">We are Turkmenistan based web designer & full-stack
             developers focused on clean & user-friendly experiences, We are passionate about building excellent software
             that improves the lives of those around us.</div>
@@ -94,7 +95,8 @@
     </div>
 
     <!-- about us -->
-    <div id="about" class="text-center text-white fs-3 mt-5 fw-semibold d-flex align-items-center justify-content-center"
+    <div id="about"
+      class="text-center green2 fs-3 mt-5 fw-semibold d-flex align-items-center justify-content-center"
       style="letter-spacing: 0.2rem;">
       ABOUT <img src="img/Atamyrat.jpg" class="img-fluid rounded-circle mx-2" width="40" alt="">
     </div>
@@ -105,7 +107,7 @@
         </div>
         <ul class="text-start p-0 m-0" style="list-style: none;">
           <li class="text-start mb-3">
-            Github : <a href="https://github.com/Atamyrat2005" class="text-decoration-none text-white"  target="_blank">
+            Github : <a href="https://github.com/Atamyrat2005" class="text-decoration-none text-white" target="_blank">
               @atamyrat2005</a>
           </li>
           <li class="text-start mb-3">
@@ -132,16 +134,16 @@
           <div class="col-6">
             <div class="border border-secondary p-4">
               <div class="green small text-center"><span class="text-white">-</span> YEARS OF EXPERIENCE</div>
-              <div class="fs-1 pt-2 text-white">
-                3 <sup class="">+</sup>
+              <div class="d-flex fs-1 pt-2 text-white">
+                <div class="three"></div> <span class="">+</span>
               </div>
             </div>
           </div>
           <div class="col-6">
             <div class="border border-secondary p-4">
               <div class="green small text-center"><span class="text-white">-</span> BACK END PROJECTS</div>
-              <div id="number" class="fs-1 pt-2 text-white">
-                5 <sup class="">+</sup>
+              <div id="number" class="d-flex fs-1 pt-2 text-white">
+                <div class="five"></div> <span class="">+</span>
               </div>
             </div>
           </div>
@@ -151,16 +153,16 @@
           <div class="col-6">
             <div class="border border-secondary p-4">
               <div class="green small text-center"><span class="text-white">-</span> FRONT END PROJECTS</div>
-              <div id="number" class="fs-1 pt-2 text-white">
-                10 <sup class="">+</sup>
+              <div id="number" class="d-flex fs-1 pt-2 text-white">
+                <div class="ten"></div> <span class="">+</span>
               </div>
             </div>
           </div>
           <div class="col-6">
             <div class="border border-secondary p-4">
               <div class="green small text-center mt-1"><span class="text-white">-</span> IT AWARDS</div>
-              <div class="fs-1 pt-2 text-white mb-3 mb-md-0">
-                6 <sup class="">+</sup>
+              <div class="d-flex fs-1 pt-2 text-white mb-3 mb-md-0">
+                <div class="six"></div> <span class="">+</span>
               </div>
             </div>
           </div>
@@ -171,9 +173,9 @@
 
 
     <!-- about us -->
-    <div class="text-center text-white fs-3 mt-5 fw-semibold d-flex align-items-center justify-content-center"
+    <div class="text-center green2 fs-3 mt-5 fw-semibold d-flex align-items-center justify-content-center"
       style="letter-spacing: 0.2rem;">
-      ABOUT <img src="img/Gozel.jpg" class="img-fluid rounded-circle mx-2" width="40" alt=""> 
+      ABOUT <img src="img/Gozel.jpg" class="img-fluid rounded-circle mx-2" width="40" alt="">
     </div>
     <div class="row mt-4">
       <div class="col-md">
@@ -182,7 +184,8 @@
         </div>
         <ul class="p-0 m-0" style="list-style: none;">
           <li class="mb-3">
-            Github : <a href="https://github.com/arsgozel" class="text-decoration-none text-white"  target="_blank"> @arsgozel</a>
+            Github : <a href="https://github.com/arsgozel" class="text-decoration-none text-white" target="_blank">
+              @arsgozel</a>
           </li>
           <li class="mb-3">
             Freelance : <span class="text-white"> Available</span>
@@ -206,16 +209,16 @@
         <div class="row g-4">
           <div class="col-6">
             <div class="border border-secondary p-4">
-              <div class="fs-1 pt-2 text-white">
-                3 <sup class="">+</sup>
+              <div class="d-flex fs-1 pt-2 text-white">
+                3 <span class="">+</span>
               </div>
               <div class="green small text-center"><span class="text-white">-</span> YEARS OF EXPERIENCE</div>
             </div>
           </div>
           <div class="col-6">
             <div class="border border-secondary p-4">
-              <div id="number" class="fs-1 pt-2 text-white">
-                5 <sup class="">+</sup>
+              <div id="number" class="d-flex fs-1 pt-2 text-white">
+                <div class="five"></div> <span class="">+</span>
               </div>
               <div class="green small text-center"><span class="text-white">-</span> BACK END PROJECTS</div>
             </div>
@@ -225,16 +228,16 @@
         <div class="row g-4 pt-4">
           <div class="col-6">
             <div class="border border-secondary p-4">
-              <div id="number" class="fs-1 pt-2 text-white">
-                10 <sup class="">+</sup>
+              <div id="number" class="d-flex fs-1 pt-2 text-white">
+                <div class="ten"></div> <span class="">+</span>
               </div>
               <div class="green small text-center"><span class="text-white">-</span> FRONT END PROJECTS</div>
             </div>
           </div>
           <div class="col-6">
             <div class="border border-secondary p-4">
-              <div class="fs-1 pt-2 text-white mb-3 mb-md-0 mt-1 mt-md-0">
-                6 <sup class="">+</sup>
+              <div class="d-flex fs-1 pt-2 text-white mb-3 mb-md-0 mt-1 mt-md-0">
+                <div class="six"></div> <span class="">+</span>
               </div>
               <div class="green small text-center"><span class="text-white">-</span> IT AWARDS</div>
             </div>
@@ -243,11 +246,9 @@
       </div>
     </div>
 
-
-
     <!-- skills -->
     <div class="mt-4 pt-5" id="skills">
-      <div class="text-center text-white fs-3 mt-5 fw-semibold text-uppercase" style="letter-spacing: 0.2rem;">Languages
+      <div class="text-center green2 fs-3 mt-5 fw-semibold text-uppercase" style="letter-spacing: 0.2rem;">Languages
         and tools we<span class="green"> USE</span></div>
 
       <div class="row justify-content-center align-items-center my-5">
@@ -321,7 +322,7 @@
       </div>
       <!-- projects -->
       <div class="mt-4 pt-4 p-4" id="projects">
-        <div class="text-center text-white fs-3 mt-5 fw-semibold text-uppercase mb-4" style="letter-spacing: 0.2rem;">
+        <div class="text-center green2 fs-3 mt-5 fw-semibold text-uppercase mb-4" style="letter-spacing: 0.2rem;">
           Our <span class="green"> Projects</span></div>
 
         <div
@@ -329,8 +330,8 @@
           <div class="d-block" data-aos="fade-up" data-aos-duration="750">
             <div><img class="img-fluid rounded-top-3" src="img/p/p1.png" alt=""></div>
             <div class="p-3 rounded-bottom-4 border border-secondary border-opacity-50">
-              <a href="https://atamyrat2005.github.io/Estate/" class="fs-4 text-decoration-none text-white"  target="_blank"><span
-                  class="green">-</span> Estate Agency</a>
+              <a href="https://atamyrat2005.github.io/Estate/" class="fs-4 text-decoration-none text-white"
+                target="_blank"><span class="green">-</span> Estate Agency</a>
               <p class="small mt-2 text-light mt-3">Fully dynamic web site with back-end and admin panel.</p>
               <ul class="text-start small text-white" style="list-style: square">
                 <li class="mb-2">Html / Css</li>
@@ -338,8 +339,8 @@
                 <li class="mb-2">Bootstrap / Laravel / PWA</li>
               </ul>
               <br>
-              <a href="https://github.com/Atamyrat2005"
-                class="d-flex justify-content-end text-decoration-none green"  target="_blank">@Atamyrat2005</a>
+              <a href="https://github.com/Atamyrat2005" class="d-flex justify-content-end text-decoration-none green"
+                target="_blank">@Atamyrat2005</a>
             </div>
           </div>
 
@@ -355,8 +356,8 @@
                 <li class="mb-2">Js / Splide Js</li>
               </ul>
               <br>
-              <a href="https://github.com/arsgozel"
-                class="d-flex justify-content-end text-decoration-none green"  target="_blank">@arsgozel</a>
+              <a href="https://github.com/arsgozel" class="d-flex justify-content-end text-decoration-none green"
+                target="_blank">@arsgozel</a>
             </div>
           </div>
 
@@ -391,8 +392,8 @@
                 <li class="mb-2">Js / Splide Js</li>
               </ul>
               <br>
-              <a href="https://github.com/arsgozel"
-                class="d-flex justify-content-end text-decoration-none green"  target="_blank">@arsgozel</a>
+              <a href="https://github.com/arsgozel" class="d-flex justify-content-end text-decoration-none green"
+                target="_blank">@arsgozel</a>
             </div>
           </div>
         </div>
@@ -404,7 +405,7 @@
         <footer>
           <!-- contact -->
           <div class="mt-4 pt-4" id="contact">
-            <div class="text-center text-white fs-3 mt-5 fw-semibold text-uppercase mb-4"
+            <div class="text-center green2 fs-3 mt-5 fw-semibold text-uppercase mb-4"
               style="letter-spacing: 0.2rem;">
               GET IN <span class="green">TOUCH</span></div>
 
@@ -420,8 +421,8 @@
                 </div>
                 <ul class="text-start p-0 m-0" style="list-style: none;">
                   <li class="text-start mb-3">
-                    Github: <a href="https://github.com/Codingtkm"
-                      class="text-decoration-none text-white green2" target="_blank">Coding <span class="green">TKM</span></a>
+                    Github: <a href="https://github.com/Codingtkm" class="text-decoration-none text-white green2"
+                      target="_blank">Coding <span class="green">TKM</span></a>
                   </li>
                 </ul>
               </div>
@@ -431,8 +432,9 @@
                   <span class="green">-</span> SOCIAL MEDIA
                 </div>
                 <div class="d-flex align-items-center justify-content-end ps-3">
-                  <a href="https://github.com/Codingtkm" class="btn btn-outline-primary rounded-pill mx-2"  target="_blank">
-                    <i class="bi bi-github fs-4"></i> 
+                  <a href="https://github.com/Codingtkm" class="btn btn-outline-primary rounded-pill mx-2"
+                    target="_blank">
+                    <i class="bi bi-github fs-4"></i>
                   </a>
 
                   <a class="btn btn-outline-primary rounded-pill green2 mx-2">
@@ -449,9 +451,10 @@
                 </div>
                 <div class="text-end mt-3">
                   Developers: <a href="https://github.com/arsgozel" class="green text-decoration-none"
-                    target="_blank">Gözel</a><span class="text-white"> & </span><a href="https://atamyrat2005.github.io/"
-                    class="green text-decoration-none" target="_blank">Atamyrat</a>
-                  </div>
+                    target="_blank">Gözel</a><span class="text-white"> & </span><a
+                    href="https://atamyrat2005.github.io/" class="green text-decoration-none"
+                    target="_blank">Atamyrat</a>
+                </div>
               </div>
             </div>
           </div>
@@ -459,12 +462,11 @@
 
       <hr>
       <div class="text-center pb-3">© 2023 All rights reserved | Design by: <a href="https://github.com/arsgozel"
-          class="green text-decoration-none" target="_blank">Gözel</a><span class="text-white"> & </span><a href="https://atamyrat2005.github.io/"
-          class="green text-decoration-none" target="_blank">Atamyrat</a></div>
+          class="green text-decoration-none" target="_blank">Gözel</a><span class="text-white"> & </span><a
+          href="https://atamyrat2005.github.io/" class="green text-decoration-none" target="_blank">Atamyrat</a></div>
 
       </footer>
     </div>
-
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         new Splide('.splide', {
@@ -502,6 +504,14 @@
     </script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['<span class="text-white">Coding</span> TKM', 'developers', 'designers', '<span class="text-white">the</span> BEST'],
+        backSpeed: 75,
+        typeSpeed: 125,
+        loop: true
+      });
     </script>
 </body>
 
